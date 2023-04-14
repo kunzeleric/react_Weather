@@ -1,0 +1,14 @@
+.footerWeather{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #0000004f;
+    
+
+    &__contact{
+        display: flex;
+        img{
+            width: 30px;
+        }
+    }
+}
