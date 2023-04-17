@@ -6,6 +6,7 @@ import WeatherService from "../../api/WeatherAPI";
 
 const Home = () => {
 
+  const [isCardVisible, setCardVisible] = useState(false);
   const [local, setLocal] = useState({});
   const [tempoAtual, setTempoAtual] = useState({});
 
@@ -14,15 +15,14 @@ const Home = () => {
 
     const searchValue = event.target[0].value;
     const container = document.querySelector(".main__container");
-    const containerHidden = document.querySelector(".main__card");
 
     if (searchValue) {
         container.classList.toggle("hidden");
-        containerHidden.classList.toggle("hidden");
         const { data: { current, location } } = await WeatherService.getCurrentWeather(searchValue);
 
         setLocal(location)
         setTempoAtual(current);
+        setCardVisible(true);
     }
 
     else {
@@ -46,9 +46,8 @@ const Home = () => {
           <button type="submit">Search!</button>
         </form>
       </div>
-      <div className="main__card hidden">
-        <Card local={local} tempoAtual={tempoAtual}/>
-      </div>
+        {
+          isCardVisible ? <Card local={local} tempoAtual={tempoAtual}/> : null}
     </main>
   );
 };

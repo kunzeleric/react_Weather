@@ -5,9 +5,8 @@ const Card = ({ local, tempoAtual }) => {
     <div className="card">
       <div className="card__container">
         <h2 className="card__container-location">
-          {local.name} located in {local.country}.
+          {local.name}, located in {local.country}.
         </h2>
-        <h3>Weather Actual Condition</h3>
         <img src={tempoAtual.condition.icon} alt={tempoAtual.condition.text} />
 
         <div className="card__container-weather">
