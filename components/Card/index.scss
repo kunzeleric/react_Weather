@@ -1,53 +1,43 @@
-.card{
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    
-    
-    &__container{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 1em;
-        background-color: rgba($color: #00000081, $alpha: 0.8);
-        padding: 2em 4em;
-        border-radius: 20px;
+    gap: 1em;
+    background-color: rgba($color: #00000081, $alpha: 0.8);
+    padding: 2em 4em;
+    border-radius: 20px;
 
-        &-weather{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 10%;
-            padding-top: 1em;
-
-            span{
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                min-width: 70px;
-                min-height: 70px;
-                background-color: rgba($color: #fffdfd81, $alpha: 0.5);
-                border-radius: 10px;
-            }
-        }
-
-        &-others{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 5%;
-            padding-top: 1em;
-
-            span{
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                min-width: 70px;
-                min-height: 70px;
-                background-color: rgba($color: #fffdfd81, $alpha: 0.5);
-                border-radius: 10px;
-            }
-        }
+    &-weather {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10%;
+      padding-top: 1em;
     }
+
+    &-others {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 5%;
+      padding-top: 1em;
+    }
+
+    span {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 70px;
+      min-height: 70px;
+      background-color: rgba($color: #fffdfd81, $alpha: 0.5);
+      border-radius: 10px;
+      font-size: 1.2em;
+    }
+  }
 }
