@@ -1,7 +1,20 @@
 .card {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  
+  &__arrow{
+    background-color: transparent;
+    border: 0;
+    width: 50px;
+    position: relative;
+    right: 230px;
+    top: 70px;
+    cursor: pointer;
+  }
+
 
   &__container {
     display: flex;
@@ -25,7 +38,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 5%;
+      gap: 10%;
       padding-top: 1em;
     }
 
@@ -40,4 +53,41 @@
       font-size: 1.2em;
     }
   }
+
+  &__buttons {
+    display: flex;
+    gap: 2em;
+    margin-top: 2em;
+
+    button {
+        color: #fff;
+        width: 250px;
+        height: 40px;
+        border: 0;
+        border-radius: 5px;
+        font-size: 1.2em;
+        font-weight: 600;
+        text-transform: uppercase;
+        margin-top: 1em;
+        cursor: pointer;
+        transition: all 0.6s ease-in-out;
+      background-image: linear-gradient(
+        to right,
+        #11111f 0%,
+        #78be20 51%,
+        #11111f 100%
+      );
+    }
+
+        button:hover {
+        background-image: linear-gradient(
+          to left,
+          #78be20 0%,
+          #11111f 51%,
+          #78be20 100%
+        );
+      }
+  }
 }
+
+

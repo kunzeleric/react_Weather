@@ -1,62 +1,71 @@
-.main{
-    text-align: center;
-    margin-top: 5em;
-    color: #fff;
+.main {
+  text-align: center;
+  margin-top: 5em;
+  color: #fff;
 
-    &__container{
-        background-color: rgba($color: #00000081, $alpha: 0.8);
-        display: inline-flex;
-        flex-direction: column;
-        padding: 3em;
-        border-radius: 20px;
+  &__container {
+    background-color: rgba($color: #00000081, $alpha: 0.8);
+    display: inline-flex;
+    flex-direction: column;
+    padding: 3em;
+    border-radius: 20px;
 
-
-        &-title{
-            padding-bottom: 1.5em;
-        }
-
-        &-form{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-
-            label{
-                font-size: 1.5em;
-                font-weight: 500;
-            }
-
-            input{
-                color: #000;
-                text-indent: 0.5em;
-                margin-top: 1em;
-                width: 60%;
-                height: 45px;
-                border-radius: 5px;
-                border: 0;
-                font-size: 1em;
-            }
-
-            button{
-                background-color: #29693f;
-                color: #fff;
-                padding: 0.5em 4em;
-                border: 0;
-                border-radius: 5px;
-                font-size: 1.2em;
-                font-weight: 600;
-                text-transform: uppercase;
-                margin-top: 1em;
-                cursor: pointer;
-                transition: all 0.6s ease-in-out;
-            }
-        
-            button:hover{
-                background-color: #000000;
-            }
-        }
+    &-title {
+      padding-bottom: 1.5em;
     }
-    
-    .hidden{
-        display: none !important;
+
+    &-form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      label {
+        font-size: 1.5em;
+        font-weight: 500;
+      }
+
+      input {
+        color: #000;
+        text-indent: 0.5em;
+        margin-top: 1em;
+        width: 60%;
+        height: 45px;
+        border-radius: 5px;
+        border: 0;
+        font-size: 1em;
+      }
+
+      button {
+        background-image: linear-gradient(
+          to right,
+          #56ab2f 0%,
+          #a8e063 51%,
+          #56ab2f 100%
+        );
+        color: #fff;
+        padding: 0.5em 4em;
+        border: 0;
+        border-radius: 5px;
+        font-size: 1.2em;
+        font-weight: 600;
+        text-transform: uppercase;
+        margin-top: 1em;
+        cursor: pointer;
+        transition: all 0.6s ease-in-out;
+      }
+
+      button:hover {
+        background-image: linear-gradient(
+          to left,
+          #a8e063 0%,
+          #56ab2f 51%,
+          #a8e063 100%,
+        );
+      }
     }
+  }
+
+  .hidden {
+    display: none !important;
+  }
 }

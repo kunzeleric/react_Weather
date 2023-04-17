@@ -23,6 +23,7 @@ const Home = () => {
         setLocal(location)
         setTempoAtual(current);
         setCardVisible(true);
+        event.target[0].value = "";
     }
 
     else {
@@ -47,7 +48,8 @@ const Home = () => {
         </form>
       </div>
         {
-          isCardVisible ? <Card local={local} tempoAtual={tempoAtual}/> : null}
+          isCardVisible ? <Card local={local} tempoAtual={tempoAtual}/> : null
+        }
     </main>
   );
 };

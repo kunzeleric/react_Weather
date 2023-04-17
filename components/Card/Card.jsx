@@ -1,8 +1,19 @@
 import "./index.scss";
+import arrow from '../../src/assets/imgs/arrows.svg';
 
 const Card = ({ local, tempoAtual }) => {
+
+  async function goBack() {
+    const containerButton = document.querySelector(".card");
+    const container = document.querySelector(".main__container");
+
+    containerButton.classList.toggle("hidden");
+    container.classList.toggle("hidden");
+    }
+
   return (
     <div className="card">
+      <button className="card__arrow" onClick={goBack}><img src={arrow} alt="" /></button>
       <div className="card__container">
         <h2 className="card__container-location">
           {local.name}, located in {local.country}.
@@ -34,9 +45,9 @@ const Card = ({ local, tempoAtual }) => {
           </div>
         </div>
       </div>
-      <div className="buttons">
-        <button></button>
-        <button></button>
+      <div className="card__buttons">
+        <button>Forecast</button>
+        <button>Photo Gallery</button>
       </div>
     </div>
   );
