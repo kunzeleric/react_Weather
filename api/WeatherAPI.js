@@ -8,11 +8,11 @@ const weatherIcons = 'https://www.weatherapi.com/docs/conditions.json'
 class WeatherService{
     
     static getCurrentWeather(location){
-        return axios.get(`${baseUrl}/current.json?key=${apikey}&q=${location}`);
+        return axios(`${baseUrl}/current.json?key=${apikey}&q=${location}`);
     }
 
     static getForecastWeather(location){
-        return axios.get(`${baseUrl}/forecast.json?key=${apikey}&q=${location}`);
+        return axios(`${baseUrl}/forecast.json?key=${apikey}&q=${location}`);
     }
 }
 
