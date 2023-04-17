@@ -1,32 +1,34 @@
 import "./index.scss";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Card from "../../components/Card/Card";
 import WeatherService from "../../api/WeatherAPI";
+
 
 const Home = () => {
 
   const [local, setLocal] = useState({});
   const [tempoAtual, setTempoAtual] = useState({});
 
-  async function handleSubmit(event){
+  async function handleSubmit(event) {
     event.preventDefault();
 
     const searchValue = event.target[0].value;
     const container = document.querySelector(".main__container");
     const containerHidden = document.querySelector(".main__card");
-    
-    if(searchValue){
-      container.classList.toggle("hidden");
-      containerHidden.classList.toggle("hidden");
-      const { data: { current, location} } = await WeatherService.getCurrentWeather(searchValue);
-      setLocal(location)
-      setTempoAtual(current);
+
+    if (searchValue) {
+        container.classList.toggle("hidden");
+        containerHidden.classList.toggle("hidden");
+        const { data: { current, location } } = await WeatherService.getCurrentWeather(searchValue);
+
+        setLocal(location)
+        setTempoAtual(current);
     }
-    
+
     else {
-      alert('Please input a location.');
+        alert('Please input a location.');
     }
-  };
+};
 
   return (
     <main className="main">
