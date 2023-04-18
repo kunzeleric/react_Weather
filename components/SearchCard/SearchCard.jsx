@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import WeatherCard from "../WeatherCard/WeatherCard";
-import WeatherService from '../../api/WeatherAPI';
+import WeatherService from "../../api/WeatherAPI";
 
 const SearchCard = () => {
   const [isCardVisible, setCardVisible] = useState(false);

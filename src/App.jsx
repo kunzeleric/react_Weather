@@ -8,7 +8,7 @@ function App() {
     <div className="App" style={{position: 'relative', minHeight: '100%'}}>
       <Routes>
         <Route path='/' element={<Home/>}></Route>
-        <Route path='/forecast' element={<Forecast/>}></Route>
+        <Route path='/forecast/:location' element={<Forecast/>}></Route>
         <Route path='/gallery/:location' ></Route>
       </Routes>
     </div>

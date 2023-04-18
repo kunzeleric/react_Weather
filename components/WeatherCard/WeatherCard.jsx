@@ -3,7 +3,7 @@ import arrow from '../../src/assets/imgs/arrows.svg';
 import { Link } from "react-router-dom";
 
 const WeatherCard = ({ local, tempoAtual }) => {
-
+  
   async function goBack() {
     const containerCard = document.querySelector(".card");
     const container = document.querySelector(".main__container");
@@ -47,7 +47,7 @@ const WeatherCard = ({ local, tempoAtual }) => {
         </div>
       </div>
       <div className="card__buttons">
-        <Link to='/forecast'><button>Forecast</button></Link>
+        <Link to={`/forecast/${local.name}`}><button>Forecast</button></Link>
         <button>Photo Gallery</button>
       </div>
     </div>
