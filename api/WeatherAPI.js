@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const baseUrl = 'http://api.weatherapi.com/v1';
+const baseUrl = 'https://api.weatherapi.com/v1';
 const apikey = 'ab970fb46f55404f8da235513232003';
 
 class WeatherService{

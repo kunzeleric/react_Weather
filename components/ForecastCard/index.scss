@@ -1,0 +1,69 @@
+.card-forecast {
+  background-color: rgba($color: #fffdfd81, $alpha: 0.3);
+  color: #fff;
+  padding: 2em 4em;
+  border-radius: 10px;
+  box-shadow: -10px -10px 10px 10px rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+
+  &__img {
+    max-width: 70px;
+  }
+
+  &__date {
+    font-size: 2em;
+  }
+
+  &__condition {
+    background-color: rgba($color: #00000081, $alpha: 0.5);
+    border-radius: 10px;
+    gap: 2em;
+    padding: 1em;
+  }
+
+  &__temp {
+    display: flex;
+    justify-content: space-around;
+    gap: 1em;
+    background-color: rgba($color: #00000081, $alpha: 0.5);
+    border-radius: 10px;
+    padding: 1em;
+    
+    &-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      gap: 0.7em;
+      align-items: center;
+      font-size: 1.2em;
+    }
+  }
+
+  &__rain{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    border-radius: 10px;
+    padding: 0.5em 1em;
+    background-color: rgba($color: #00000081, $alpha: 0.5);
+
+    &-precipitation,
+    &-humidity {
+      display: inline-block;
+      margin-right: 10px;
+    }
+  
+    &-precipitation:before {
+      content: "Precipitation: ";
+    }
+  
+    &-humidity:before {
+      content: "Humidity: ";
+    }
+
+  }
+
+
+}

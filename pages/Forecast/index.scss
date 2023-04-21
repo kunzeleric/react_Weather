@@ -1,0 +1,61 @@
+.forecast {
+  text-align: center;
+
+  &__container {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba($color: #00000081, $alpha: 0.8);
+    border-radius: 10px;
+    margin-top: 2vw;
+    padding: 0em 2em;
+
+    &-city {
+      color: #fff;
+      text-align: center;
+      padding: 0.5em 0;
+      font-size: 3em;
+    }
+
+    &-cards {
+      display: flex;
+      justify-content: space-around;
+      gap: 2em;
+      flex-wrap: wrap;
+      padding-bottom: 5%;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+    &-btn {
+      background-image: linear-gradient(
+        to right,
+        #3a751f 0%,
+        #518116 51%,
+        #366d1c 100%
+      );
+      color: #fff;
+      padding: 0.5em 4em;
+      border: 0;
+      border-radius: 5px;
+      font-size: 1.2em;
+      font-weight: 600;
+      text-transform: uppercase;
+      margin-top: 1em;
+      cursor: pointer;
+      transition: all 0.6s ease-in-out;
+
+      &:hover {
+        background-image: linear-gradient(
+          to left,
+          #171f0d 0%,
+          #19380a 51%,
+          #345808 100%
+        );
+      }
+    }
+  }
+}
