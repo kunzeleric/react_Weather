@@ -4,17 +4,9 @@ import { Link } from "react-router-dom";
 
 const WeatherCard = ({ local, tempoAtual }) => {
   
-  async function goBack() {
-    const containerCard = document.querySelector(".card");
-    const container = document.querySelector(".main__container");
-
-    containerCard.classList.toggle("hidden");
-    container.classList.remove("hidden");
-    }
-
   return (
     <div className="card">
-      <button className="card__arrow"><img onClick={goBack} src={arrow} alt="" /></button>
+      <Link to='/'><button className="card__arrow"><img src={arrow} alt="" /></button></Link>
       <div className="card__container">
         <h2 className="card__container-location">
           {local.name}, located in {local.country}.

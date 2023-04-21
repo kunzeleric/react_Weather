@@ -7,21 +7,21 @@ import { useEffect, useState } from "react";
 import WeatherService from "../../api/WeatherAPI";
 
 const Forecast = () => {
-  const { location } = useParams();
+  const { place } = useParams();
 
   const [weatherForecast, setWeatherForecast] = useState([]);
 
-  async function getForecast(location) {
+  async function getForecast(place) {
     const {
       data: {
         forecast: { forecastday },
       },
-    } = await WeatherService.getForecastWeather(location);
+    } = await WeatherService.getForecastWeather(place);
     setWeatherForecast(forecastday);
   }
 
   useEffect(() => {
-    getForecast(location);
+    getForecast(place);
   }, []);
 
   return (
@@ -29,7 +29,7 @@ const Forecast = () => {
       <Header />
       <div className="forecast">
         <div className="forecast__container">
-          <h1 className="forecast__container-city">{location}</h1>
+          <h1 className="forecast__container-city">{place}</h1>
           <div className="forecast__container-cards">
             {weatherForecast.map((day) => (
               <ForecastCard data={day} />
@@ -38,6 +38,7 @@ const Forecast = () => {
         </div>
         <div className="forecast__buttons">
             <Link to='/'><button className="forecast__buttons-btn">Go Back</button></Link>
+            <Link to={`/current/${place}`}><button className="forecast__buttons-btn">Current Weather</button></Link>
             <button className="forecast__buttons-btn">Gallery</button>
           </div>
       </div>
