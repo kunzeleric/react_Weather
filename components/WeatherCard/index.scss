@@ -5,8 +5,8 @@
   align-items: center;
   color: #fff;
   text-align: center;
-  
-  &__arrow{
+
+  &__arrow {
     background-color: transparent;
     border: 0;
     width: 50px;
@@ -16,14 +16,14 @@
     cursor: pointer;
   }
 
-
   &__container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 1em;
-    background-color: rgba($color: #00000081, $alpha: 0.8);
+    background-color: #9e9e9e33;
+
     padding: 2em 4em;
     border-radius: 20px;
 
@@ -61,34 +61,32 @@
     margin-top: 2em;
 
     button {
-        color: #fff;
-        width: 250px;
-        height: 40px;
-        border: 0;
-        border-radius: 5px;
-        font-size: 1.2em;
-        font-weight: 600;
-        text-transform: uppercase;
-        margin-top: 1em;
-        cursor: pointer;
-        transition: all 0.6s ease-in-out;
+      color: #fff;
+      width: 250px;
+      height: 40px;
+      border: 0;
+      border-radius: 5px;
+      font-size: 1.2em;
+      font-weight: 600;
+      text-transform: uppercase;
+      margin-top: 1em;
+      cursor: pointer;
+      transition: all 0.6s ease-in-out;
       background-image: linear-gradient(
         to right,
-        #11111f 0%,
-        #78be20 51%,
-        #11111f 100%
+        #3a751f 0%,
+        #518116 51%,
+        #366d1c 100%
       );
     }
 
-        button:hover {
-        background-image: linear-gradient(
-          to left,
-          #78be20 0%,
-          #11111f 51%,
-          #78be20 100%
-        );
-      }
+    button:hover {
+      background-image: linear-gradient(
+        to left,
+        #171f0d 0%,
+        #19380a 51%,
+        #345808 100%
+      );
+    }
   }
 }
-
-

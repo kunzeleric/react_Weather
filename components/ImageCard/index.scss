@@ -1,0 +1,25 @@
+
+.image__card{
+
+    &-img{
+
+        img{
+            width: 380px;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 5px;
+            transition: all 0.4s ease-in-out
+        }
+
+        img:hover{
+            transform: scale(0.9);
+        }
+    }
+
+    &-user{
+        font-size: 1em;
+        text-align: center;
+        font-weight: 600;
+        color: #fff;
+    }
+}

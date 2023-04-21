@@ -1,17 +1,9 @@
 import "./index.scss";
 
 const ForecastCard = ({ data }) => {
-  const newDate = new Date(Date.parse(data.date));
-
-  let day = newDate.getDate();
-  let month = newDate.getMonth() + 1;
-  let year = newDate.getFullYear();
-  let date = `${day}/${month}/${year}`;
-
-  console.log(data);
   return (
     <div className="card-forecast">
-      <h2 className="card-forecast__date">{date}</h2>
+      <h2 className="card-forecast__date">{data.date}</h2>
 
       <div className="card-forecast__condition">
         <img

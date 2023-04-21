@@ -40,7 +40,7 @@ const WeatherCard = ({ local, tempoAtual }) => {
       </div>
       <div className="card__buttons">
         <Link to={`/forecast/${local.name}`}><button>Forecast</button></Link>
-        <button>Photo Gallery</button>
+        <Link to={`/gallery/${local.name}`}><button>Photo Gallery</button></Link>
       </div>
     </div>
   );

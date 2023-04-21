@@ -4,11 +4,11 @@
     color: #fff;
   
     &__container {
-      background-color: rgba($color: #00000081, $alpha: 0.8);
       display: inline-flex;
       flex-direction: column;
       padding: 3em;
       border-radius: 20px;
+      background-color: #9e9e9e33;
   
       &-title {
         padding-bottom: 1.5em;

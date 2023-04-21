@@ -1,18 +1,15 @@
 
 import axios from 'axios';
 
-const baseUrl = '';
-const apikey = '';
+const baseUrl = 'https://api.unsplash.com/search/photos?';
+const apikey = 'Q-AQWhRWiI0BRfjBGddjma1g0g4_RyXNbRpgzeJth4s';
 
 class ImageService{
     
-    static getCurrentWeather(location){
-        return axios(`${baseUrl}`);
-    }
-
-    static getForecastWeather(location){
-        return axios(`${baseUrl}`);
+    static getPictures(location){
+        return axios(`${baseUrl}&query=${location}&client_id=${apikey}&per_page=8&auto=format`);
     }
 }
+
 
 export default ImageService;

@@ -39,7 +39,7 @@ const Forecast = () => {
         <div className="forecast__buttons">
             <Link to='/'><button className="forecast__buttons-btn">Go Back</button></Link>
             <Link to={`/current/${place}`}><button className="forecast__buttons-btn">Current Weather</button></Link>
-            <button className="forecast__buttons-btn">Gallery</button>
+            <Link to={`/gallery/${place}`}><button className="forecast__buttons-btn">Gallery</button></Link>
           </div>
       </div>
       <Footer />
