@@ -5,6 +5,10 @@ As I noticed everyone else was doing something really similar to this, I decided
 
 <a href="https://weather-react-nowandthen.netlify.app/" target="_blank">Netlify link<a/>
 
+## Screenshot
+
+<img src="https://github.com/kunzeleric/react_Weather/assets/114115220/24f34c57-60ce-4b03-a75b-95c59e22f9d8" width="500px" height= "500px"/>
+
 ## Technologies & Dependencies
 
 - ReactJS
