@@ -1,7 +1,7 @@
 ## Weather Now&Then - A Weather Info App!
 
 I decided to practice my React skills with this Weather API (https://www.weatherapi.com/docs/). Seemed like a good idea to train some hooks and props exchanges.
-As I noticed everyone else was doing something really similar to this, I decided to change the layout to look a bit unique and also included the possibility to search for pictures, using the Unsplashed API.
+As I noticed everyone else was doing something really similar to this, I decided to change the layout to look a bit unique and also included the possibility to look at pictures of the searched place using the Unsplashed API.
 
 <a href="https://weather-react-nowandthen.netlify.app/" target="_blank">Netlify link<a/>
 
@@ -16,7 +16,7 @@ As I noticed everyone else was doing something really similar to this, I decided
 - Axios
 - React-Router
 - SASS
-- 
+
   
 ## Take Aways
 
